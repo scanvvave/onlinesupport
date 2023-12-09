@@ -32,12 +32,12 @@
             let userId = profile.userId;
             let displayName = profile.displayName;
             let pictureUrl = profile.pictureUrl;
-            let url = "<< URL >>?userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
+            let url = "https://script.google.com/macros/s/AKfycbxl0RsAP2WTORwsvrUJLm735Ym560MDt2s7o4HLQR_XYXiXfVeQUuWj7Moon3Oc-5MAOw/exec?userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
             document.getElementById("formframe").src = url;
         }).catch(err => console.error(err));
     }
 
-    liff.init({ liffId: "<< Liff ID >>" }, () => {
+    liff.init({ liffId: "2002095045-bv5yxwQ1" }, () => {
         if (liff.isLoggedIn()) {
             runApp();
         } else {
